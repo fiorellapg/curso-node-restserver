@@ -9,13 +9,13 @@ const usuariosGet = (req = request, res = response) => {
     });
 }
 
-const usuariosPut =(req, res= response) => {
-    const {id } = req.params; // params puede traer muchos datos.
-    res.json({
-        msg: 'put API - controller',
-        id
-    });
-}
+const usuariosPut = (req, res = response) => { 
+    const { id } = req.params; // params puede traer muchos datos. 
+    res.json({ 
+        msg: 'put API - controller', 
+        id 
+    }); 
+} 
 
 const usuariosPost = (req, res = response) => {
     const {nombre,edad} = req.body;
